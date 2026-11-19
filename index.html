@@ -1,3 +1,71 @@
-<html>
-Hello world!
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nasrullah Taha</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <h1>Nasrullah Taha</h1>
+
+      <p>
+        I'm a Canadian engineer currently working on mechatronics,
+        firmware and controls at AON3D. We build industrial 3D
+        printers used by aerospace companies for aircraft, rockets,
+        satellites, and space probes, and by R&D teams in other
+        industries. It's great because it brings together two things I
+        enjoy: mechanical systems and low-level computing. Over the
+        course of my career so far, I've moved from web development to
+        robotics (for warehouse and factory automation) to
+        mechatronics.
+      </p>
+
+      <p>
+        I did a master's degree in mechanical and aerospace
+        engineering, but a lot of what I've learned has come from
+        textbooks and open online courses. I enjoy working through
+        them, both for fun and with future goals in mind. I also have
+        a page of <a href="eng_resources.html"> engineering
+        resources</a> that I've particularly enjoyed and recommend to
+        anyone interested in mechanical or aerospace engineering.
+      </p>
+
+      <p>
+        I'm interested in aerospace, especially fluid dynamics,
+        compressible flow, hypersonics, and propulsion.  I've long
+        thought nuclear rocket propulsion is essential if we're going
+        to do ambitious space exploration, and I'd like to contribute
+        to that research someday. Until then, I'm building the
+        background for it through my own study.
+      </p>
+
+      <p>
+        Outside of work I like getting outdoors: hiking, cycling,
+        kayaking, rock climbing, and photography
+        (<a href="https://www.flickr.com/photos/nasrullahs"
+        target="_blank" rel="noopener noreferrer">flickr</a>). And, as
+        a Canadian, naturally, hockey.
+      </p>
+
+      <p>
+        <a href="#" id="email">show email</a>
+        <script>
+          document.getElementById("email").addEventListener("click", function (e) {
+            if (this.dataset.shown) return;
+            e.preventDefault();
+            const parts = ["aGVsbG9AbnRh", "aGEuY2E="];
+            const addr = atob(parts.join(""));
+            this.textContent = addr;
+            this.href = "mailto:" + addr;
+            this.dataset.shown = "1";
+          });
+        </script>
+        |
+        <a href="https://www.linkedin.com/in/nasrullahtaha">linkedin</a>
+      </p>
+    </main>
+  </body>
 </html>
